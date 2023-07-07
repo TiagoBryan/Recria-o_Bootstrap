@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    padding: 50px;
+   }
+    #card-area{
+      width: 900px;
+      height: auto;
+      background-color: #d9d9d9;
+      display: flex;
+      flex-direction: row;
+      border-radius: 30px;
+    }
+
+    .card-esquerda{
+      width: 33%;
+      height: 100%;
+      background-color: #d9d9d9;
+      border-radius: 30px;
+      
+      
+    }
+    .card-esquerda img{
+      max-width: 100%;
+      height: auto;
+      
+    }
+    .card-direita {
+      max-width: 67%;
+      height: 100%;
+    
+    }
+    h1{
+   
+      text-align: center;
+    }
+    .grupo-paragrafos-card{
+      padding: 0px 20px;
+    }
+
+    @media (max-width: 917px){
+      #card-area{
+        flex-direction: column;
+     
+        
+      }
+      .card-esquerda, .card-esquerda img {
+        min-width: 100%;
+      }
+      .card-direita{
+        min-width: 100%;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+  
+    <div id="card-area">
+      <div class="card-esquerda">
+          <img src="motorCarrossel.png" alt="">
+        
+      </div>
+      <div class="card-direita">
+        <h1>Motor</h1>
+        <div class="grupo-paragrafos-card">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+        </div>
+        
+      </div>
+    </div>
+
+ 
+</body>
+</html>
